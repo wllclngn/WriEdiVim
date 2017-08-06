@@ -1,4 +1,4 @@
-Write, Edit, Export (v2.0) in Vim
+<b>Write, Edit, Export (v2.0) in Vim</b>
 
 See ".vimrc" for the code to place in "~/.vimrc" file.
 
