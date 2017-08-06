@@ -4,7 +4,7 @@
 
 ///////////////////////////////////////////////////////////
 
-"Write & Edit Mode" :WE
+<B>"Write & Edit Mode" :WE</B>
 
 Automatically run w/ 'autocmd' for .doc files, feel free to make them for .txt files, etal
 
@@ -12,7 +12,7 @@ Only ":ED" is necessary if you want to work on a document outside of ":WE" & Vim
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-"Import Document" :ID
+<B>"Import Document" :ID</B>
 
 Reformat a document previously used/created in a word processor for usage in ":WE" & Vim
 
@@ -22,7 +22,7 @@ Reformat a document previously used/created in a word processor for usage in ":W
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-"Format Document" :FD
+<B>"Format Document" :FD</B>
 
 Replace Vim's inputs (comma, question-mark, etal) w/ styled ones, cleans up document when sometimes beat-up w/ "fo=a" as discussed later
 
@@ -30,7 +30,7 @@ Commands are stacked, be careful if adding your own
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-"Export Document" :ED
+<B>"Export Document" :ED</B>
 
 Removes hard-wraps for soft-wraps, etal
 
