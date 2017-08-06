@@ -1,5 +1,9 @@
 //////////////////////////////
+/////////////////////////////
+
   COMMANDS:
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 "Write & Edit Mode" :WE
@@ -35,7 +39,11 @@ Removes hard-wraps for soft-wraps, etal
 Prepares a document edited within ":WE" & Vim for usage in a word processor, etc.
 
 //////////////////////////////
+/////////////////////////////
+
   ":WE" DETAILS:
+  
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 Within ":WE" the following is setup:
