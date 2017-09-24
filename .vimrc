@@ -6,7 +6,7 @@
 autocmd BufNewFile,BufReadPre *.doc :WE
 
 " Write & Edit (v2.0) ":WE"
-func! WriEdiMode()
+func! WriEdi()
  setlocal fo=a tw=80 nonumber noautoindent wrap virtualedit=onemore tabstop=5 shiftwidth=5
  hi StatusLine ctermbg=234 cterm=bold
  setlocal statusline=\ \ \ \ \ %t\ \ \ \ \ %P\ \ \ \ \ %{WordCount()}\ \ \ \ \ %M\ %M\ 
@@ -14,7 +14,7 @@ func! WriEdiMode()
  " For those wishing to auto-Tab on hitting Enter/Return
  " inoremap <CR> <CR><CR><tab>
  endfu
-com! WE call WriEdiMode()
+com! WE call WriEdi()
 
 "WordCount Function setup
 "code by Abslom Daak and/or Telemachus
