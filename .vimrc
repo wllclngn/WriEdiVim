@@ -1,11 +1,11 @@
-"Write, Edit, Export (v2.0) CODE:
+"Write & Edit (v2.0) CODE:
 "by Will Clingan, etal
 "
 "To be placed directly into a "~/.vimrc" file
 
 autocmd BufNewFile,BufReadPre *.doc :WE
 
-" Write & Edit Mode ":WE"
+" Write & Edit (v2.0) ":WE"
 func! WriEdiMode()
  setlocal fo=a tw=80 nonumber noautoindent wrap virtualedit=onemore tabstop=5 shiftwidth=5
  hi StatusLine ctermbg=234 cterm=bold
