@@ -1,6 +1,6 @@
 <b>Write & Edit (v2.0) text-files in Vim</b>
 
-If you feel that software cannot make you a better writer, ":WE" may be the setup for you. Where some promise minimalist, distraction-free setups for writing, ":WE" (harnassed w/in Vim) is truly the most minimal setup a writer can run with modern software that offers the user-support and stability of Vim. 
+DESCRIPTION: If you feel that software cannot make you a better writer, ":WE" may be the setup for you. Where some promise minimalist, distraction-free setups for writing, ":WE" (harnassed w/in Vim) is truly the most minimal setup a writer can run with modern software that offers the user-support and stability of Vim. 
 
 See ".vimrc" for the code to place in "~/.vimrc" file.
 
