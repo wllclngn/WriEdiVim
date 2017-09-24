@@ -4,7 +4,7 @@
 
 ///////////////////////////////////////////////////////////
 
-<B>"Write & Edit Mode" :WE</B>
+<B>"Write & Edit" :WE</B>
 
 Automatically run w/ 'autocmd' for .doc files, feel free to make them for .txt files, etal
 
@@ -16,9 +16,9 @@ Only ":ED" is necessary if you want to work on a document outside of ":WE" & Vim
 
 Reformat a document previously used/created in a word processor for usage in ":WE" & Vim
 
-"normal gggqGgg" is used for text to be properly resubmitted after ":ID" is entered, then cursor placed at start of document
+"normal gggqGgg" is used for text to be properly reconfigured after ":ID" is entered, then cursor placed at start of document
 
-":ID" is not placed onto a text document automatically for various reasons, most specifically if a document is accidentally opened in Vim; can be easily assimilated into ":WE" (most easily called by function-name on ":WE"'s final line due to command stacking) if a user wants it to be automatically called
+":ID" is not placed onto a text document automatically for various reasons, most specifically if a document is already properly formatted or accidentally opened in Vim; can be easily assimilated into ":WE" (most easily called by function-name on ":WE"'s final line due to command stacking) if a user wants it to be automatically called
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
