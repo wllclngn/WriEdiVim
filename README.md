@@ -6,6 +6,8 @@ See ".vimrc" for the code to place in "~/.vimrc" file.
 
 See "documentation.md" for detailed information on what 'Write & Edit (v2.0)...' does.
 
+See "WE-Vim.jpeg" for an image of what ":WE" looks like in action.
+
 HISTORY: For a long time I sought a text-editor that could handle both computer programming and writing (.txt, .doc, etal) environments. Vim was chosen due to its cross-platform, multi-faceted usability, customization, light-weightness and extremely unique editing Modes that synced hand-in-hand w/ writing just as well as programming. That I was able to create this setup, w/out plugins and w/ minimal code inside of Vim's internal system was another significant bonus. "Write, Edit, Export" took about a month to create (12/2016-01/2017), and culminated in my becoming a novice in Vim. Several updates since its inception to refine the programming and user-exeperience have occured.
 
 VIM EXPERIENCE LEVEL: Novice.
