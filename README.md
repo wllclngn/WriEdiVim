@@ -1,4 +1,4 @@
-<b>Write & Edit (v2.0) text-files in Vim</b>
+<b>Write & Edit (v2.0) doc-files in Vim</b>
 
 DESCRIPTION: If you feel that software cannot make you a better writer, ":WE" may be the setup for you. Where some promise minimalist, distraction-free setups for writing, ":WE" (harnassed w/in Vim) is truly the most minimal setup a writer can run with modern software that offers the user-support and stability of Vim. 
 
