@@ -6,21 +6,19 @@
 
 <B>"Write & Edit" :WE</B>
 
-Automatically run w/ 'autocmd' for .doc files, feel free to make them for .txt files, etal
+Automatically run w/ 'autocmd' for .doc files, feel free to make them for .txt files, etal; be cautious using for any other file-extension that .doc files
 
-Only ":ED" is necessary if you want to work on a document outside of ":WE" & Vim
+Only ":ED" command is necessary if you want to work on a document outside of ":WE" & Vim
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+##############################
 
-<B>"Import Document" :ID</B>
+<B>"Export Document" :ED</B>
 
-Reformat a document previously used/created in a word processor for usage in ":WE" & Vim
+Removes hard-wraps for soft-wraps, etal
 
-"normal gggqGgg" is used for text to be properly reconfigured after ":ID" is entered, then cursor placed at start of document
+Prepares a document edited within ":WE" & Vim for usage in a word processor, etc.
 
-":ID" is not placed onto a text document automatically for various reasons, most specifically if a document is already properly formatted or accidentally opened in Vim; can be easily assimilated into ":WE" (most easily called by function-name on ":WE"'s final line due to command stacking) if a user wants it to be automatically called
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+##############################
 
 <B>"Format Document" :FD</B>
 
@@ -28,13 +26,17 @@ Replace Vim's inputs (comma, question-mark, etal) w/ styled ones, cleans up docu
 
 Commands are stacked, be careful if adding your own
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+##############################
 
-<B>"Export Document" :ED</B>
+<B>"Import Document" :ID</B>
 
-Removes hard-wraps for soft-wraps, etal
+Reformat a document previously used/created in a word processor for usage in ":WE" & Vim
 
-Prepares a document edited within ":WE" & Vim for usage in a word processor, etc.
+"normal gggqGgg" is used for text to be properly reconfigured after ":ID" is entered, then cursor placed at start of document
+
+":ID" is not placed onto a text document automatically for various reasons, most specifically if a document is already properly formatted or accidentally opened in Vim; can be easily assimilated into ":WE" (most easily called by function-name on ":WE"'s final line due to command stacking) if a user wants it to be automatically called; 
+
+Known bug is using ":ED" then using ":ID" on a document in the same session; paragraph text will bleed out of 'tw=80', and only fix is saving, exiting, reopening, but should almost never be an issue as these commands will likely not be repeatedly stacked in one session
 
 ///////////////////////////////////////////////////////////
 
