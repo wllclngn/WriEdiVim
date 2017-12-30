@@ -58,6 +58,6 @@ Tab-keys are set to five-spaces because a traditional Tab-key is unreliable in, 
 
 The status-line setup shows the file's path and name, "+ +" if the document has been edited, word count, column number, line number and the window's view of a document in percentage.
 
-Further setup changes the color of the statusline to a dark-color with grey text as to lessen hindrance when writing and editing.
+Further setup changes the color of the statusline to a dark-color with grey text as to lessen hindrance when writing and editing. This also provides a visual cue that one has entered ":WE" successfully.
 
 An "inoremap" for two Enters/Returns ("carriage-returns") is called when Enter/Return is pressed due to issues w/ "fo=a" inside of Vim. (Vim's creator, Bram Moolenaar, states "fo=a" is a problem child, which it is, in Vim's tutorial.) If a single-Enter/Return ("carriage-return") is used between two paragraphs, the "carriage-return"/spacing between them will disappear when working on the second paragraph, thus bleeding both paragraphs together. This "inoremap" for "carriage-return" simply helps w/ the "fo=a" issue that bleeds paragraphs together while still allowing a more natural Enter/Return within ":WE".
