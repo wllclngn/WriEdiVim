@@ -10,7 +10,7 @@ Automatically run w/ 'autocmd' for .doc files, feel free to make them for .txt f
 
 Only ":ED" command is necessary if you want to work on a document outside of ":WE" & Vim
 
-##############################
+########################
 
 <B>"Export Document" :ED</B>
 
@@ -18,7 +18,7 @@ Removes hard-wraps for soft-wraps, etal
 
 Prepares a document edited within ":WE" & Vim for usage in a word processor, etc.
 
-##############################
+########################
 
 <B>"Format Document" :FD</B>
 
@@ -26,7 +26,7 @@ Replace Vim's inputs (comma, question-mark, etal) w/ styled ones, cleans up docu
 
 Commands are stacked, be careful if adding your own
 
-##############################
+########################
 
 <B>"Import Document" :ID</B>
 
