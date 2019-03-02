@@ -20,9 +20,9 @@ Removes hard-wraps for soft-wraps, etal, placed onto a file thru ":WE". Prepares
 
 Reformat a document previously used/created in a word processor for usage in ":WE" & Vim.
 
-"normal gggqGgg" is used for text to be properly reconfigured after ":ID" is entered, then cursor placed at start of document
+"normal gggqGgg" is used for text to be properly reconfigured after ":ID" is entered, then cursor placed at start of document.
 
-":ID" is not placed onto a text document automatically for various reasons, most specifically if a document is already properly formatted or accidentally opened in Vim; can be easily assimilated into ":WE" if a user wants it to be automatically called.
+":ID" is not placed onto a text document automatically for various reasons, most specifically if a document is already properly formatted or accidentally opened in Vim. ":ID" can be easily assimilated into ":WE" if a user wants it to be automatically called, but is not recommended.
 
 Known bug is using ":ED" then using ":ID" on a document in the same session; paragraph text will bleed out of 'tw=80'. The only fix is saving, exiting, reopening, but should almost never be an issue as these commands will likely not be repeatedly stacked in one session.
 
@@ -31,8 +31,6 @@ Known bug is using ":ED" then using ":ID" on a document in the same session; par
   <B>":WE" DETAILS:</B>
   
 ///////////////////////////////////////////////////////////
-
-Within ":WE" the following is setup:
 
 Formatting-options ("fo=a") are set so paragraphs are reformatted automatically when text is added, thus paragraphs will not break-up when new text is entered.
 
