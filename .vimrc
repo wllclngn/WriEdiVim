@@ -1,18 +1,26 @@
-"Write & Edit (v2.0) CODE:
-"by Will Clingan, etal
-"
-"To be placed directly into a "~/.vimrc" file
+" Write & Edit (v2.1) CODE:
+" by Will Clingan, etal
 
-autocmd BufNewFile,BufReadPre *.doc :WE
-" For those who like .txt files. However, it is recommended to call :WE in the command-line for .txt files.
+" Commands for both *txt and *doc files to auto-call ":WE" when the file-type is opened in Vim.
 " autocmd BufNewFile,BufReadPre *.txt :WE
+" autocmd BufNewFile,BufReadPre *.doc :WE
+
+" Commands that have replaced the Format Document function ":FD"
+" If *doc files are used, simply replace *txt in each line.
+autocmd BufNewFile,BufReadPre *.txt inoremap "" “”<left>
+autocmd BufNewFile,BufReadPre *.txt inoremap '' ‘’<left>
+autocmd BufNewFile,BufReadPre *.txt inoremap ' ’
+autocmd BufNewFile,BufReadPre *.txt inoremap (  ()<left>
+autocmd BufNewFile,BufReadPre *.txt inoremap [  []<left>
+autocmd BufNewFile,BufReadPre *.txt inoremap -- —
 
 " // Write & Edit ":WE" //
 func! WriEdi()
-  setlocal fo=a tw=80 nonumber noautoindent virtualedit=onemore tabstop=5 shiftwidth=5
-  hi Normal ctermfg=Blue
-  hi StatusLine ctermfg=Grey ctermbg=232 cterm=bold
-  setlocal statusline=\ \ \ \ \ %F\ \ \ \ \ %M\ %M\ %=W%{WordCount()}\ \ \ \ \ C%c\ \ \ \ \ L%l\ \ \ \ \ %P\ \ \ \ \ 
+  syntax off
+  set fo=a tw=80 colorcolumn=80 nonumber noautoindent virtualedit=onemore tabstop=5 shiftwidth=5
+  hi StatusLine ctermfg=255 ctermbg=235 cterm=bold
+  hi ColorColumn ctermbg=Black
+  setlocal statusline=\ \ \ \ \ %F\ \ \ \ \ %M\ %M\ %=C%c\ \ \ \ \ L%l\ \ \ \ \ W%{WordCount()}\ \ \ \ \ %P\ \ \ \ \ 
   inoremap <CR> <CR><CR>
 endfu
 com! WE call WriEdi()
@@ -33,30 +41,6 @@ function! WordCount()
   return s:word_count
 endfu
 
-" // Import Document Function ":ID" //
-func! ImpDocFunc()
-  %s/\n/\ \r\r/g
-  %s/\t/\ \ \ \ \ /g
-  normal gggqGgg
-endfu 
-com! ID call ImpDocFunc() 
-
-" // Format Document Function ":FD" //
-func! FmtDocFunc()
-  %s/--/—/g
-  %s/\.\ \ /\.\ /g
-  %s/"/“/g 
-  %s/\,“/\,”/g
-  %s/\.“/\.”/g
-  %s/—“/—”/g
-  %s/?“/?”/g
-  %s/!“/!”/g
-  %s/“\ /”\ /g 
-  %s/'/’/g
-  %s/\[dot\]/●/g
-endfu
-com! FD call FmtDocFunc()
-
 " // Export Document Function ":ED" //
 " // croql & vipJ, Luke Maciak: http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
 func! ExpDocFunc()
@@ -65,7 +49,17 @@ func! ExpDocFunc()
   setlocal fo=croql 
   %norm vipJ 
   %s/\ \n\n/\ \r/g 
+  %s/\.\ \ /\.\ /g
+  %s/\ \ /\ /g
   %s/\t/\ \ \ \ \ /g
   normal gg
 endfu 
 com! ED call ExpDocFunc()
+
+" // Import Document Function ":ID" //
+func! ImpDocFunc()
+  %s/\n/\ \r\r/g
+  %s/\t/\ \ \ \ \ /g
+  normal gggqGgg
+endfu 
+com! ID call ImpDocFunc()
