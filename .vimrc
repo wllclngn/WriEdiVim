@@ -5,7 +5,6 @@
 " autocmd BufNewFile,BufReadPre *.txt :WE
 " autocmd BufNewFile,BufReadPre *.doc :WE
 
-" // Write & Edit ":WE" //
 func! WriEdi()
   syntax off
   set fo=a tw=80 colorcolumn=80 nonumber noautoindent virtualedit=onemore tabstop=5 shiftwidth=5
@@ -19,7 +18,7 @@ func! WriEdi()
   inoremap (  ()<left>
   inoremap [  []<left>
   inoremap -- —
-  " // Abslom Daak || Telemachus: http://stackoverflow.com/questions/114431/fast-word-count-function-in-vim
+  " Abslom Daak || Telemachus: http://stackoverflow.com/questions/114431/fast-word-count-function-in-vim
   function! WordCount()
     let s:old_status = v:statusmsg
     let position = getpos(".")
@@ -33,7 +32,7 @@ func! WriEdi()
     call setpos('.', position)
     return s:word_count
   endfu
-  " // croql & vipJ, Luke Maciak: http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
+  " croql & vipJ, Luke Maciak: http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
   func! ExpDocFunc()
     %s/\ \ \ \ \ /\t/g
     %s/\n\n/\ \r\r\r\r/g 
