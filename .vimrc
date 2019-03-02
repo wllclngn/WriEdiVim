@@ -11,7 +11,6 @@ func! WriEdi()
   set fo=a tw=80 colorcolumn=80 nonumber noautoindent virtualedit=onemore tabstop=5 shiftwidth=5
   hi StatusLine ctermfg=255 ctermbg=235 cterm=bold
   hi ColorColumn ctermbg=Black
-  setlocal statusline=\ \ \ \ \ %F\ \ \ \ \ %M\ %M\ %=C%c\ \ \ \ \ L%l\ \ \ \ \ W%{WordCount()}\ \ \ \ \ %P\ \ \ \ \ 
   " // Abslom Daak || Telemachus: http://stackoverflow.com/questions/114431/fast-word-count-function-in-vim
   function! WordCount()
     let s:old_status = v:statusmsg
@@ -26,6 +25,7 @@ func! WriEdi()
     call setpos('.', position)
     return s:word_count
   endfu
+  setlocal statusline=\ \ \ \ \ %F\ \ \ \ \ %M\ %M\ %=C%c\ \ \ \ \ L%l\ \ \ \ \ W%{WordCount()}\ \ \ \ \ %P\ \ \ \ \ 
   inoremap <CR> <CR><CR>
   inoremap "" “”<left>
   inoremap '' ‘’<left>
