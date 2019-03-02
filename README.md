@@ -1,14 +1,12 @@
-<b>Write & Edit (v2.0): Creative writing in Vim</b>
-
-DESCRIPTION: Write & Edit (":WE") was created out of a desire for simplicity when writing creatively. If you feel that bloated software is too much and a notepad-application is not enough, then ":WE" may be the setup for you. ":WE" is a minimal setup, requiring only a "~/.vimrc" file, which any writer can utilize with the user-support and stability of Vim. Written entirely in Vimscript, ":WE" aims for legible code that any user can modify to their liking.
+<b>Write & Edit (v2.1): Creative writing in Vim</b>
 
 See ".vimrc" for the code to place in "~/.vimrc" file.
 
-See "documentation.md" for detailed information on what 'Write & Edit (v2.0)...' does.
+See "documentation.md" for detailed information on what 'Write & Edit (v2.1)...' does.
 
 See "WE-Vim.jpeg" for an image of what ":WE" looks like in action.
 
-HISTORY: For a long time I sought a text-editor that could handle both computer programming and creative writing environments. Vim was chosen due to its cross-platform, multi-faceted usability, customization, light-weightness and extremely unique editing Modes that synced hand-in-hand w/ writing creatively just as well as programming. "Write & Edit" (v2.0) took about a month to create (12/2016-01/2017), and has received several updates since its inception to refine the programming and user-exeperience.
+HISTORY: For a long time I sought a text-editor that could handle both computer programming and creative writing environments. Further, I was tired of bloated word processors. Vim was chosen due to its cross-platform, multi-faceted usability, customization, light-weightness and extremely unique editing Modes that synced hand-in-hand w/ writing creatively just as well as programming. "Write & Edit" took about a month to create (12/2016-01/2017), and has received several updates since its inception to refine programming and user-exeperience. ":WE" (v2.1) was released 03/2019 to cut out the unnecessary Format Document function, replaced w/ innoremap functions to automatically acquire proper formatting.
 
 VIM EXPERIENCE LEVEL: Novice.
 
