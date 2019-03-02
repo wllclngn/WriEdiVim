@@ -33,7 +33,6 @@ func! WriEdi()
   inoremap (  ()<left>
   inoremap [  []<left>
   inoremap -- —
-  inoremap [dot] ●
   " // croql & vipJ, Luke Maciak: http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
   func! ExpDocFunc()
     %s/\ \ \ \ \ /\t/g
