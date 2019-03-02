@@ -5,15 +5,6 @@
 " autocmd BufNewFile,BufReadPre *.txt :WE
 " autocmd BufNewFile,BufReadPre *.doc :WE
 
-" Commands that have replaced the Format Document function ":FD"
-" If *doc files are used, simply replace *txt in each line.
-autocmd BufNewFile,BufReadPre *.txt inoremap "" “”<left>
-autocmd BufNewFile,BufReadPre *.txt inoremap '' ‘’<left>
-autocmd BufNewFile,BufReadPre *.txt inoremap ' ’
-autocmd BufNewFile,BufReadPre *.txt inoremap (  ()<left>
-autocmd BufNewFile,BufReadPre *.txt inoremap [  []<left>
-autocmd BufNewFile,BufReadPre *.txt inoremap -- —
-
 " // Write & Edit ":WE" //
 func! WriEdi()
   syntax off
@@ -22,6 +13,12 @@ func! WriEdi()
   hi ColorColumn ctermbg=Black
   setlocal statusline=\ \ \ \ \ %F\ \ \ \ \ %M\ %M\ %=C%c\ \ \ \ \ L%l\ \ \ \ \ W%{WordCount()}\ \ \ \ \ %P\ \ \ \ \ 
   inoremap <CR> <CR><CR>
+  inoremap "" “”<left>
+  inoremap '' ‘’<left>
+  inoremap ' ’
+  inoremap (  ()<left>
+  inoremap [  []<left>
+  inoremap -- —
 endfu
 com! WE call WriEdi()
 
