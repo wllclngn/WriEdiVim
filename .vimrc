@@ -12,9 +12,13 @@ func! WriEdi()
   hi ColorColumn ctermbg=Black
   setlocal statusline=\ \ \ \ \ %F\ \ \ \ \ %M\ %M\ %=C%c\ \ \ \ \ L%l\ \ \ \ \ W%{WordCount()}\ \ \ \ \ %P\ \ \ \ \ 
   inoremap <CR> <CR><CR>
-  inoremap "" “”<left>
-  inoremap '' ‘’<left>
+  inoremap " “
+  inoremap ." .”
+  inoremap ," ,”
+  inoremap ?" ?”
+  inoremap --" —”
   inoremap ' ’
+  inoremap '' ‘
   inoremap (  ()<left>
   inoremap [  []<left>
   inoremap -- —
@@ -33,7 +37,7 @@ func! WriEdi()
     return s:word_count
   endfu
   " croql & vipJ, Luke Maciak: http://www.terminally-incoherent.com/blog/2013/06/17/using-vim-for-writing-prose/
-  func! ExpDocFunc()
+  func! ExpDoc()
     %s/\ \ \ \ \ /\t/g
     %s/\n\n/\ \r\r\r\r/g 
     setlocal fo=croql 
@@ -44,12 +48,12 @@ func! WriEdi()
     %s/\t/\ \ \ \ \ /g
     normal gg
   endfu 
-  com! ED call ExpDocFunc()
-  func! ImpDocFunc()
+  com! ED call ExpDoc()
+  func! ImpDoc()
     %s/\n/\ \r\r/g
     %s/\t/\ \ \ \ \ /g
     normal gggqGgg
   endfu 
-  com! ID call ImpDocFunc() 
+  com! ID call ImpDoc() 
 endfu
 com! WE call WriEdi()
