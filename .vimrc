@@ -1,5 +1,5 @@
 " Write & Edit (v2.1) CODE:
-" by Will Clingan
+" by willsi
 
 " Commands for both *txt and *doc files to auto-call ":WE" when the file-type is opened in Vim.
 " autocmd BufNewFile,BufReadPre *.txt :WE
