@@ -11,5 +11,3 @@ HISTORY: For a long time I sought a text-editor that could handle both computer 
 VIM EXPERIENCE LEVEL: Novice.
 
 WARNING: Vim does not promise the functionality of a word processor. While one need to know very little of Vim, it is recommended that a user have advanced/expert knowledge of word processors or text editors when using ":WE". While one merely need only copy/paste into a "~/.vimrc" file, the functionality this setup rides on must be understood well.
-
-Created by Will Clingan, etal.
