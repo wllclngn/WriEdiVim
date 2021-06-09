@@ -3,6 +3,8 @@
 See ".vimrc" for the code to place in "~/.vimrc" file.
 See ".vimrc" for the code to place in "~/.vimrc" file.
 
+~/.vim/pack/plugins/start/lightline/autoload/lightline.vim
+
 See "documentation.md" for detailed information on what 'Write & Edit (v3.0)...' does.
 
 HISTORY: For a long time I sought a text-editor that could handle both computer programming and creative writing environments. Further, I was tired of bloated word processors, and underpowered text-editors were not sufficient. Vim was chosen due to its cross-platform, multi-faceted usability, customization, light-weightness and extremely unique editing Modes that synced hand-in-hand w/ writing creatively just as well as programming. ":WE" (v1.0) took about a month to create (12/2016-01/2017). ":WE" (v3.0) was released in 03/2019 to cut out the unnecessary Format Document function (replaced w/ innoremap functions to automatically acquire proper formatting while typing in a ":WE" environment, see "documentation.md") and removed the WordCount function for the now included wordcount function in VimScript.
