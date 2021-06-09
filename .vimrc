@@ -7,7 +7,7 @@
 
 func! WriteEdit()
   syntax off
-  set fo=a tw=80 nonumber noautoindent virtualedit=onemore tabstop=5 shiftwidth=5
+  set fo=a tw=80 nonumber virtualedit onemore noautoindent virtualedit=onemore tabstop=5 shiftwidth=5
   inoremap <CR> <CR><CR>
   inoremap " “
   inoremap ." .”
