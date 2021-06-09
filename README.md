@@ -1,6 +1,7 @@
 <b>Write & Edit (v3.0): Creative writing in Vim</b>
 
 See ".vimrc" for the code to place in "~/.vimrc" file.
+See ".vimrc" for the code to place in "~/.vimrc" file.
 
 See "documentation.md" for detailed information on what 'Write & Edit (v3.0)...' does.
 
