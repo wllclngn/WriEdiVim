@@ -48,4 +48,10 @@ An "inoremap" for two Enters/Returns ("carriage-returns") is called when Enter/R
 
 Further, inoremaps are included to replace formatting properly. Due to special-circumstances, ” & ‘ are called by double-tapping " & ' b/c of their unique usage, ie quoting titles w/out characters like ", . ..." etc. See function's code for better understanding.
 
+///////////////////////////////////////////////////////////
+
+  <B>"lightline.vim" DETAILS:</B>
+  
+///////////////////////////////////////////////////////////
+
 The modifications for lightline will display current Mode, filename, file's type, file's encoding, "Δ" if the file has unsaved changes, cursor's current column, cursor's current line out of file's entire line count, file's byte count and the file's word count.
