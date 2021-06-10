@@ -1,6 +1,6 @@
 <b>Write & Edit (v3.0): Writing in Vim</b>
 
-VIM EXPERIENCE LEVEL: Novice, Median.
+<b>VIM EXPERIENCE LEVEL</b>: Novice, Median.
 
 See ".vimrc" for the code to place in "~/.vimrc" file.
 
