@@ -26,14 +26,17 @@ light-weightness and<br /> extremely unique editing Modes.
 ":WE" (v3.0): 06/2021<br /> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A long overdue release of the incorporation of <br
-/> lightline, automatic formatting updates and bug resolutions.<br /> 
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lightline, automatic formatting updates and bug
+resolutions.<br /> 
 
 ":WE" (v2.0): 03/2019<br /> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removed Format Document function (replaced w/<br
-/> innoremap functions to automatically acquire proper formatting while typing
-in a<br /> ":WE" environment, see "documentation.md") and removed the WordCount
-function<br /> for the now included wordcount function in VimScript.<br /> 
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;innoremap functions to automatically acquire
+proper formatting while typing in a<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;":WE"
+environment, see "documentation.md") and removed the WordCount function<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the now included wordcount function in
+VimScript.<br /> 
 
 ":WE" (v1.0): 12/2016-01/2017 
 
