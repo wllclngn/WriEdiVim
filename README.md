@@ -1,4 +1,4 @@
-<b>Write & Edit (v3.0): Writing in Vim</b>
+<h1>Write & Edit (v3.0): Writing in Vim</h1>
 
 <b>WARNING</b>: Vim does not promise the functionality of a word processor. While one merely need only copy/paste into a "~/.vimrc" file, the functionality this setup rides on must be understood well.
 
