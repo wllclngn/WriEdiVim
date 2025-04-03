@@ -2,17 +2,17 @@
 
 <b>WARNING</b>: Vim does not promise the functionality of a word processor. While one merely need only copy/paste into a "~/.vimrc" file, the functionality this setup rides on must be understood well.
 
-<i>VIM EXPERIENCE</i>: Novice, Median.
+<b>VIM EXPERIENCE</b>: Novice, Median.
 
 See ".vimrc" for the code to place in "~/.vimrc" file.
 
-<i>NOTE</i>: lightline is not required for functionality of ":WE". However, lightline's ethos works hand-in-hand w/ that of ":WE". For a more informative statusline, it is recommended to install and use lightline w/ ":WE".
+<b>NOTE</b>: lightline is not required for functionality of ":WE". However, lightline's ethos works hand-in-hand w/ that of ":WE". For a more informative statusline, it is recommended to install and use lightline w/ ":WE".
 
 See "lightline.vim" for the code to place in "~/.vim/pack/plugins/start/lightline/autoload/lightline.vim" file.
 
 See "documentation.md" for detailed information on what 'Write & Edit (v3.0)...' does.
 
-<i>HISTORY</i>:
+<b>HISTORY</b>:
 
 I became tired of bloated word processors, and underpowered text-editors were not sufficient. For a long time I sought a text-editor that could handle both computer programming and creative writing environments. Vim was chosen due to its cross-platform, multi-faceted usability, customization, light-weightness and extremely unique editing Modes.
 
